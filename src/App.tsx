@@ -1,11 +1,14 @@
 import './App.css'
-import { Counter } from './components/Counter'
+import { Counter } from './screens/Counter'
 import { PokemonScreen } from './screens/PokemonScreen'
+import { ToDoScreen } from './screens/ToDoScreen'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <PokemonScreen />
+      {/* <Counter /> */}
+      {/* <PokemonScreen /> */}
+      <ToDoScreen />
     </div>
   )
 }
