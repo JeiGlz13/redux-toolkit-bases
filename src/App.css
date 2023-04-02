@@ -18,19 +18,49 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.box {
+  width: 150px;
+  height: 150px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 5%;
+}
+
+.button-tap {
+  display: flex;
+  flex-direction: row;
+  margin-top: '0.5rem';
+}
+
+/*Framer motion animation with css and states*/
+.parent {
+  background: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent[data-isOpen="true"] {
+  width: 400px;
+  height: 200px;
+}
+
+.child {
+  width: 40px;
+  height: 40px;
+  background: #f107a3;
+  border-radius: 50%;
 }
 
 .card {
