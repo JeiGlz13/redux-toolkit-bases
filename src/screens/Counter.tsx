@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment, incrementByAmount } from '../redux/slices/counter/counterSlice'
-import { RootState } from '../redux/store/store'
+import type { RootState } from '../redux/store/store'
 
-export const Counter = () => {
-  const { value, times } = useSelector((state: RootState) => state.counter);
-  const dispatch = useDispatch();
+export const Counter = (): JSX.Element => {
+  const { value, times } = useSelector((state: RootState) => state.counter)
+  const dispatch = useDispatch()
 
   return (
     <div>
@@ -15,7 +15,7 @@ export const Counter = () => {
               backgroundColor: 'white',
               padding: '0.5rem 1rem',
               borderRadius: '0.8rem',
-              color: 'black',
+              color: 'black'
             }}
           >
               {value}

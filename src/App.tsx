@@ -1,9 +1,7 @@
 import './App.css'
-import { Counter } from './screens/Counter'
-import { PokemonScreen } from './screens/PokemonScreen'
 import { ToDoScreen } from './screens/ToDoScreen'
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <div className="App">
       {/* <Counter /> */}

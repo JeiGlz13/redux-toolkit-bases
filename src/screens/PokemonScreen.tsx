@@ -1,15 +1,15 @@
 import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { getPokemon } from '../redux/slices/pokemon/pokemonThunks';
-import { RootState } from '../redux/store/store';
+import { useDispatch, useSelector } from 'react-redux'
+import { getPokemon } from '../redux/slices/pokemon/pokemonThunks'
+import type { RootState } from '../redux/store/store'
 
-export const PokemonScreen = () => {
-  const dispatch = useDispatch();
-  const { pokemon, isLoading, page } = useSelector((state: RootState) => state.pokemon); 
+export const PokemonScreen = (): JSX.Element => {
+  const dispatch = useDispatch()
+  const { pokemon, isLoading, page } = useSelector((state: RootState) => state.pokemon)
   useEffect(() => {
-    dispatch(getPokemon());
-  }, []);
-  
+    dispatch(getPokemon())
+  }, [])
+
   return (
     <div>
       <h1>Pokemon App</h1>
@@ -18,7 +18,9 @@ export const PokemonScreen = () => {
       <ul>
         {
           pokemon.map((singlePokemon: any) => (
-            <li>{singlePokemon.name}</li>
+            <li key={singlePokemon.name}>
+              {singlePokemon.name}
+            </li>
           ))
         }
       </ul>

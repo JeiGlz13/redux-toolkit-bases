@@ -1,14 +1,14 @@
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-type Props = {
-  label: string,
-  action:  () => void,
+interface Props {
+  label: string
+  action: () => void
 }
 
 export const AnimatedButton = ({
   label,
-  action,
-}: Props) => {
+  action
+}: Props): JSX.Element => {
   return (
     <motion.button
       initial={{ opacity: 0, scale: 0.5 }}
@@ -17,10 +17,10 @@ export const AnimatedButton = ({
         duration: 0.3,
         ease: [0, 0.71, 0.2, 1.01],
         scale: {
-            type: "spring",
-            damping: 5,
-            stiffness: 100,
-            restDelta: 0.001
+          type: 'spring',
+          damping: 5,
+          stiffness: 100,
+          restDelta: 0.001
         }
       }}
       onClick={action}

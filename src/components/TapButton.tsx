@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 
-export const TapButton = () => {
-  const [isOpen, setIsOpen] = useState(false);
+export const TapButton = (): JSX.Element => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <motion.button
     className="button-tap"
-    onClick={() => setIsOpen((prev) => !prev)}
+    onClick={() => { setIsOpen((prev) => !prev) }}
     whileTap={{ scale: 0.95 }}
-    animate={isOpen ? "open" : "closed"}
+    animate={isOpen ? 'open' : 'closed'}
   >
     <h4
       style={{
