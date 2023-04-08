@@ -1,72 +1,72 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+	height: 6em;
+	padding: 1.5em;
+	will-change: filter;
+	transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+	filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+	filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 .box-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .box {
-  width: 150px;
-  height: 150px;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  border-radius: 5%;
+	width: 150px;
+	height: 150px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	border-radius: 5%;
 }
 
 .button-tap {
-  display: flex;
-  flex-direction: row;
-  margin-top: '0.5rem';
+	display: flex;
+	flex-direction: row;
+	margin-top: '0.5rem';
 }
 
 /*Framer motion animation with css and states*/
 .parent {
-  background: white;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	background: white;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.parent[data-isOpen="true"] {
-  width: 400px;
-  height: 200px;
+.parent[data-isOpen='true'] {
+	width: 400px;
+	height: 200px;
 }
 
 .child {
-  width: 40px;
-  height: 40px;
-  background: #f107a3;
-  border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background: #f107a3;
+	border-radius: 50%;
 }
 
 .card {
-  padding: 2em;
+	padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+	color: #888;
 }
